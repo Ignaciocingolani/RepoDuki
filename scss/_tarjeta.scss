@@ -1,0 +1,119 @@
+
+.tarjeta {
+        background-color: black;
+        color: $color-primario;
+        width: 500px;
+        border: hidden;
+        border-radius: 20px;
+        padding: 40px;
+        margin: 50px;
+        img {
+            width: 250px;
+            height: 180px;
+            border:hidden 2px ;
+            border-radius: 10px;
+            
+        }
+        
+         ul {
+        
+            font-size: 16px;
+            list-style: none; 
+        
+        } 
+         h2 {
+            color: $color-primario;
+            font-size: 20px;
+            text-align: start;
+            margin-bottom: 10px;
+        }
+        display: grid;
+    column-gap: 10px;
+    grid-template-areas:    "lugar          lugar          lugar"
+                            "imagen         fecha          fecha"
+                            "imagen         fecha          fecha"
+                            "imagen         ...            comprar";
+    }
+
+
+
+.tarjeta1 {
+    grid-area: tarjeta1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tarjeta2 {
+    grid-area: tarjeta2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tarjeta3 {
+    grid-area: tarjeta3;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.tarjeta4 {
+    grid-area: tarjeta4;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tarjeta5 {
+    grid-area: tarjeta5;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta6 {
+    grid-area: tarjeta6;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+ 
+
+.comprar {
+    background-color:$color-primario;
+    color: black;
+    border-radius: 2px;
+    font-size: 16px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+
+.lugar {
+    grid-area: lugar;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.imagen {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fecha{
+    grid-area: fecha;
+    display: flex;
+    flex-direction: column;
+ 
+    
+}

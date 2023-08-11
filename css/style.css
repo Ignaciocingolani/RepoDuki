@@ -1,7 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+}
+
+.yesan .asan {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  column-gap: 10px;
+  grid-template-areas: "img p";
+  align-items: center;
+}
+.yesan .asan img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+  grid-area: img;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -36,7 +53,18 @@ header {
   font-size: 30px;
 }
 
-/* ------------main--------------- */
+footer {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+footer img {
+  width: 100px;
+  height: 75px;
+  margin: 4px;
+}
+
 main {
   width: 100%;
   height: 100%;
@@ -169,50 +197,6 @@ p {
   justify-content: center;
 }
 
-.yesan {
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
-  column-gap: 10px;
-  grid-template-areas: "img p1";
-  align-items: center;
-}
-.yesan img {
-  width: 300px;
-  border-radius: 10px;
-  margin: 20px;
-  grid-area: img;
-  display: flex;
-  flex-direction: column;
-}
-
-.p1 {
-  grid-area: p1;
-  display: flex;
-  flex-direction: column;
-}
-
-.asan {
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
-  column-gap: 10px;
-  grid-template-areas: "img p2";
-  align-items: center;
-}
-.asan img {
-  width: 300px;
-  border-radius: 10px;
-  margin: 20px;
-  grid-area: img;
-  display: flex;
-  flex-direction: column;
-}
-
-.p2 {
-  grid-area: p2;
-  display: flex;
-  flex-direction: column;
-}
-
 .musica {
   display: grid;
   column-gap: 10px;
@@ -224,27 +208,17 @@ p {
   border-radius: 10px;
   margin: 30px;
 }
+.sencillo h3 {
+  color: black;
+}
 
 .disco img {
   width: 300px;
   border-radius: 10px;
   margin: 30px;
 }
-
-.sencillo h3 {
-  color: black;
-}
-
 .disco h3 {
   color: black;
-}
-
-.tarjetas {
-  display: grid;
-  column-gap: 70px;
-  grid-template-areas: "tarjeta1 tarjeta2" "tarjeta3 tarjeta4" "tarjeta5 tarjeta6";
-  align-items: center;
-  justify-content: space-between;
 }
 
 .tarjeta {
@@ -322,7 +296,6 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-area: comprar;
 }
 
 .lugar {
@@ -343,17 +316,16 @@ p {
   flex-direction: column;
 }
 
-/* ------------footer--------------- */
-footer {
-  background-color: black;
+.p1 {
+  grid-area: p;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
 }
-footer img {
-  width: 100px;
-  height: 75px;
-  margin: 4px;
+
+.p2 {
+  grid-area: p;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ------------media max-width 992px--------------- */

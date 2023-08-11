@@ -1,0 +1,67 @@
+.formulario {
+    display: grid;
+    column-gap: 30px;
+    grid-template-areas: "nombre    propuesta"
+                         "telefono  propuesta"
+                         "email     propuesta"
+                         "...       propuesta";
+    
+color: black;
+font-size: 20px;
+padding-left: 50px;
+width: 300px;
+margin: 30px auto;
+border-bottom: 2px white;
+justify-content: center;
+input {
+    background-color:$color-primario ;
+    border: none;
+    border-bottom: 2px black;
+    width: 250px;
+    height: 25px;
+}
+ textarea {
+    width: 400px;
+    height: 350px;
+}
+button {
+    color: $color-primario ;
+    background-color: black;
+    border: solid 1px white;
+    border-radius: 5px;
+    display: flex;
+    justify-self: end;
+}
+    
+}
+
+
+.nombre {
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+}
+.telefono {
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+}
+
+.propuesta {
+    grid-area: propuesta;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.enviar {
+    width: 100px;
+    height: 25px;
+    justify-content: center;
+} 

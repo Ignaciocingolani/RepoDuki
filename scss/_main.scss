@@ -1,0 +1,68 @@
+main {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color:$color-primario;
+}
+ 
+
+.texto1 {
+    display: grid;
+    column-gap: 40px;
+    grid-template-areas: "mauro foto";
+
+    margin: 20px;
+}
+    
+.mauro {
+    grid-area: mauro;
+
+    text-align: justify;
+}
+.foto {
+    grid-area: foto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+}
+
+
+
+ul li a {
+    color: $color-primario;
+}
+
+
+h1 {
+   color: black;
+   font-size: 70px;
+   padding-left: 50px;
+   text-align: center;
+   font-family: 'Rock Salt', cursive;;
+}
+h2 {
+    color: black;
+    font-size: 60px;
+    padding-left: 20px;
+    text-align: center;
+}
+h3 {
+    color:$color-primario ;
+    font-size: 40px;
+    margin: 30px;
+}
+.subtitulo {
+    color: black;
+}
+h4 {
+    color: black;
+    font-size: 30px;
+    padding-left: 20px;
+}
+p {
+    color: black;
+    font-size: 25px;
+    padding-left: 20px;
+}

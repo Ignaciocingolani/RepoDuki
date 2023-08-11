@@ -1,0 +1,17 @@
+%flex-column{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    column-gap: 10px;
+    grid-template-areas: "img p";
+    align-items: center;
+
+    img {
+        width: 300px;
+        border-radius: 10px;
+        margin: 20px;
+        grid-area: img;
+        display: flex;
+        flex-direction: column;
+        
+    } 
+}
