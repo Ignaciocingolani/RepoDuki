@@ -8,10 +8,26 @@
             border-radius: 10px;
             margin: 30px;
         }
+        @media (max-width:768px){
+            width: 300px;
+        border-radius: 10px;
+        margin: 2px;
+        }
+        @media (max-width:576px){
+            width: 300px;
+            border-radius: 10px;
+            margin: 2px;
+        }
     }
     h3 {
         color: black;
         @media screen and (max-width: 992px){
+            color: black;
+        }
+        @media (max-width:768px){
+            color: black;
+        }
+        @media (max-width:576px){
             color: black;
         }
     }

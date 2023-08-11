@@ -20,8 +20,83 @@
   display: flex;
   flex-direction: column;
 }
-@media (max-widht: 576px) {
-  .yesan .asan {
+@media (max-width: 768px) {
+  .yesan .asan .yesan {
+    display: grid;
+    column-gap: 20px;
+    grid-template-areas: "img p1";
+    align-items: center;
+  }
+  .yesan .asan .yesan img {
+    width: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+  }
+  .yesan .asan .p1 {
+    grid-area: p1;
+    display: flex;
+    flex-direction: column;
+  }
+  .yesan .asan .asan {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: "img p2";
+    align-items: center;
+  }
+  .yesan .asan .asan img {
+    width: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+  }
+  .yesan .asan .p2 {
+    grid-area: p2;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .yesan .asan .yesan {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: "img p1";
+    align-items: center;
+  }
+  .yesan .asan .yesan img {
+    width: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+  }
+  .yesan .asan .p1 {
+    grid-area: p1;
+    display: flex;
+    flex-direction: column;
+  }
+  .yesan .asan .asan {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: "img p2";
+    align-items: center;
+  }
+  .yesan .asan .asan img {
+    width: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+  }
+  .yesan .asan .p2 {
+    grid-area: p2;
+    display: flex;
     flex-direction: column;
   }
 }
@@ -77,6 +152,15 @@ header {
     justify-content: space-between;
   }
 }
+@media (max-width: 576px) {
+  .encabezado {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 .encabezado .ul {
   display: flex;
   justify-content: end;
@@ -100,6 +184,13 @@ header {
     font-size: 15px;
   }
 }
+@media (max-width: 576px) {
+  .encabezado .ul {
+    margin-right: 5px;
+    list-style: none;
+    font-size: 20px;
+  }
+}
 .encabezado .img {
   width: 100px;
   height: 80px;
@@ -117,6 +208,13 @@ header {
     width: 80px;
     height: 60px;
     padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .encabezado .img {
+    width: 80px;
+    height: 60px;
+    padding: 2px;
   }
 }
 .encabezado .ul li a {
@@ -140,6 +238,14 @@ header {
     font-size: 10px;
   }
 }
+@media (max-width: 576px) {
+  .encabezado .ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    font-size: 5px;
+  }
+}
 
 footer {
   background-color: black;
@@ -147,19 +253,50 @@ footer {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+@media (max-width: 768px) {
+  footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
 footer img {
   width: 100px;
   height: 75px;
   margin: 4px;
+}
+@media (max-width: 576px) {
+  footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer img {
+    width: 50px;
+    height: 35px;
+    margin: 5px;
+  }
 }
 
 main {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 576px) {
+  main {
+    min-height: 60vh;
+  }
+}
 
 body {
   background-color: rgba(154, 26, 152, 0.9764705882);
+}
+@media (max-width: 576px) {
+  body {
+    width: 100%;
+  }
 }
 
 .texto1 {
@@ -180,6 +317,12 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 576px) {
+  .texto1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 
 .mauro {
   grid-area: mauro;
@@ -197,6 +340,11 @@ body {
   .foto {
     width: 300px;
     height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .foto {
+    width: 100%;
   }
 }
 
@@ -220,6 +368,24 @@ h1 {
     font-family: "Rock Salt", cursive;
   }
 }
+@media (max-width: 768px) {
+  h1 {
+    color: black;
+    font-size: 30px !important;
+    padding-left: 10px;
+    text-align: center;
+    font-family: "Rock Salt", cursive;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    color: black;
+    font-size: 10px;
+    padding-left: 5px;
+    text-align: center;
+    font-family: "Rock Salt", cursive;
+  }
+}
 
 h2 {
   color: black;
@@ -232,6 +398,22 @@ h2 {
     color: black;
     font-size: 50px;
     padding-left: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    color: black;
+    font-size: 60px;
+    padding-left: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  h2 {
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
     text-align: center;
   }
 }
@@ -248,11 +430,35 @@ h3 {
     margin: 30px;
   }
 }
+@media (max-width: 768px) {
+  h3 {
+    color: rgba(154, 26, 152, 0.9764705882);
+    font-size: 20px;
+    margin: 15px;
+  }
+}
+@media (max-width: 576px) {
+  h3 {
+    color: rgba(154, 26, 152, 0.9764705882);
+    font-size: 20px;
+    margin: 15px;
+  }
+}
 
 .subtitulo {
   color: black;
 }
 @media screen and (max-width: 992px) {
+  .subtitulo {
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  .subtitulo {
+    color: black;
+  }
+}
+@media (max-width: 576px) {
   .subtitulo {
     color: black;
   }
@@ -270,6 +476,20 @@ h4 {
     padding-left: 20px;
   }
 }
+@media (max-width: 768px) {
+  h4 {
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 576px) {
+  h4 {
+    color: black;
+    font-size: 10px;
+    padding-left: 5px;
+  }
+}
 
 .p {
   color: black;
@@ -281,6 +501,20 @@ h4 {
     color: black;
     font-size: 25px;
     padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .p {
+    color: black;
+    font-size: 10px;
+    padding-left: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .p {
+    color: black;
+    font-size: 10px;
+    padding-left: 5px;
   }
 }
 
@@ -315,11 +549,90 @@ h4 {
   display: flex;
   justify-self: end;
 }
+@media (max-width: 768px) {
+  .formulario .formulario {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: "nombre    " "telefono  " "email     " "...       " "propuesta";
+    color: black;
+    font-size: 20px;
+    width: 300px;
+    border-bottom: 2px white;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .formulario .formulario input {
+    background-color: rgba(154, 26, 152, 0.9764705882);
+    border: none;
+    border-bottom: 2px black;
+    width: 250px;
+    height: 25px;
+  }
+  .formulario .formulario textarea {
+    width: 300px;
+    height: 200px;
+  }
+  .formulario .formulario button {
+    color: rgba(154, 26, 152, 0.9764705882);
+    background-color: black;
+    border: solid 1px white;
+    border-radius: 5px;
+    display: flex;
+    justify-self: end;
+  }
+}
+@media (max-width: 576px) {
+  .formulario .formulario {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: "nombre    " "telefono  " "email     " "...       " "propuesta";
+    color: black;
+    font-size: 10px;
+    width: 100px;
+    margin: auto;
+    border-bottom: 2px white;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .formulario .formulario input {
+    background-color: rgba(154, 26, 152, 0.9764705882);
+    border: none;
+    border-bottom: 2px black;
+    width: 150px;
+    height: 25px;
+  }
+  .formulario .formulario textarea {
+    width: 200px;
+    height: 150px;
+  }
+  .formulario .formulario button {
+    color: rgba(154, 26, 152, 0.9764705882);
+    background-color: black;
+    border: solid 1px white;
+    border-radius: 5px;
+    display: flex;
+    justify-self: end;
+  }
+}
 
 .nombre {
   grid-area: nombre;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .nombre {
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .nombre {
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .telefono {
@@ -327,11 +640,39 @@ h4 {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .telefono {
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .telefono {
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .email {
   grid-area: email;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .email {
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .email {
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .propuesta {
@@ -339,11 +680,39 @@ h4 {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .propuesta {
+    grid-area: propuesta;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .propuesta {
+    grid-area: propuesta;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .enviar {
   width: 100px;
   height: 25px;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .enviar {
+    width: 100px;
+    height: 25px;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .enviar {
+    width: 100px;
+    height: 25px;
+    justify-content: center;
+  }
 }
 
 .musica {
@@ -356,6 +725,18 @@ h4 {
     display: grid;
     column-gap: 10px;
     grid-template-areas: "sencillo  disco";
+  }
+}
+@media (max-width: 768px) {
+  .musica {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .musica {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -371,10 +752,34 @@ h4 {
     margin: 30px;
   }
 }
+@media (max-width: 768px) {
+  .sencillo iframe {
+    width: 300px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .sencillo iframe {
+    width: 300px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+}
 .sencillo h3 {
   color: black;
 }
 @media screen and (max-width: 992px) {
+  .sencillo h3 {
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  .sencillo h3 {
+    color: black;
+  }
+}
+@media (max-width: 576px) {
   .sencillo h3 {
     color: black;
   }
@@ -392,10 +797,34 @@ h4 {
     margin: 30px;
   }
 }
+@media (max-width: 768px) {
+  .disco img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 2px;
+  }
+}
+@media (max-width: 576px) {
+  .disco img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 2px;
+  }
+}
 .disco h3 {
   color: black;
 }
 @media screen and (max-width: 992px) {
+  .disco h3 {
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  .disco h3 {
+    color: black;
+  }
+}
+@media (max-width: 576px) {
   .disco h3 {
     color: black;
   }
@@ -429,236 +858,7 @@ h4 {
   text-align: start;
   margin-bottom: 10px;
 }
-
-.tarjeta1 {
-  grid-area: tarjeta1;
-  display: flex;
-  flex-direction: column;
-}
-
-.tarjeta2 {
-  grid-area: tarjeta2;
-  display: flex;
-  flex-direction: column;
-}
-
-.tarjeta3 {
-  grid-area: tarjeta3;
-  display: flex;
-  flex-direction: column;
-}
-
-.tarjeta4 {
-  grid-area: tarjeta4;
-  display: flex;
-  flex-direction: column;
-}
-
-.tarjeta5 {
-  grid-area: tarjeta5;
-  display: flex;
-  flex-direction: column;
-}
-
-.tarjeta6 {
-  grid-area: tarjeta6;
-  display: flex;
-  flex-direction: column;
-}
-
-.comprar {
-  background-color: rgba(154, 26, 152, 0.9764705882);
-  color: black;
-  border-radius: 2px;
-  font-size: 16px;
-  margin: 3px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.lugar {
-  grid-area: lugar;
-  display: flex;
-  flex-direction: column;
-}
-
-.imagen {
-  grid-area: imagen;
-  display: flex;
-  flex-direction: column;
-}
-
-.fecha {
-  grid-area: fecha;
-  display: flex;
-  flex-direction: column;
-}
-
-.p1 {
-  grid-area: p;
-  display: flex;
-  flex-direction: column;
-}
-
-.p2 {
-  grid-area: p;
-  display: flex;
-  flex-direction: column;
-}
-
-/* ------------media max-width 992px--------------- */
-/* ------------media maxwidth 768px--------------- */
 @media (max-width: 768px) {
-  h1 {
-    color: black;
-    font-size: 30px !important;
-    padding-left: 10px;
-    text-align: center;
-    font-family: "Rock Salt", cursive;
-  }
-  h2 {
-    color: black;
-    font-size: 60px;
-    padding-left: 20px;
-    text-align: center;
-  }
-  h3 {
-    color: rgba(154, 26, 152, 0.9764705882);
-    font-size: 20px;
-    margin: 15px;
-  }
-  .subtitulo {
-    color: black;
-  }
-  h4 {
-    color: black;
-    font-size: 20px;
-    padding-left: 10px;
-  }
-  p {
-    color: black;
-    font-size: 10px;
-    padding-left: 5px;
-  }
-  .formulario {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas: "nombre    " "telefono  " "email     " "...       " "propuesta";
-    color: black;
-    font-size: 20px;
-    width: 300px;
-    border-bottom: 2px white;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .formulario input {
-    background-color: rgba(154, 26, 152, 0.9764705882);
-    border: none;
-    border-bottom: 2px black;
-    width: 250px;
-    height: 25px;
-  }
-  .formulario textarea {
-    width: 300px;
-    height: 200px;
-  }
-  .formulario button {
-    color: rgba(154, 26, 152, 0.9764705882);
-    background-color: black;
-    border: solid 1px white;
-    border-radius: 5px;
-    display: flex;
-    justify-self: end;
-  }
-  .nombre {
-    grid-area: nombre;
-    display: flex;
-    flex-direction: column;
-  }
-  .telefono {
-    grid-area: telefono;
-    display: flex;
-    flex-direction: column;
-  }
-  .email {
-    grid-area: email;
-    display: flex;
-    flex-direction: column;
-  }
-  .propuesta {
-    grid-area: propuesta;
-    display: flex;
-    flex-direction: column;
-  }
-  .enviar {
-    width: 100px;
-    height: 25px;
-    justify-content: center;
-  }
-  .yesan {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas: "img p1";
-    align-items: center;
-  }
-  .yesan img {
-    width: 50px;
-    border-radius: 10px;
-    margin: 20px;
-    grid-area: img;
-    display: flex;
-    flex-direction: column;
-  }
-  .p1 {
-    grid-area: p1;
-    display: flex;
-    flex-direction: column;
-  }
-  .asan {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas: "img p2";
-    align-items: center;
-  }
-  .asan img {
-    width: 50px;
-    border-radius: 10px;
-    margin: 20px;
-    grid-area: img;
-    display: flex;
-    flex-direction: column;
-  }
-  .p2 {
-    grid-area: p2;
-    display: flex;
-    flex-direction: column;
-  }
-  .musica {
-    display: flex;
-    flex-direction: column;
-  }
-  .sencillo iframe {
-    width: 300px;
-    border-radius: 10px;
-    margin: 15px;
-  }
-  .disco img {
-    width: 300px;
-    border-radius: 10px;
-    margin: px;
-  }
-  .sencillo h3 {
-    color: black;
-  }
-  .disco h3 {
-    color: black;
-  }
-  .tarjetas {
-    display: flex;
-    flex-direction: column;
-  }
   .tarjeta {
     background-color: black;
     color: rgba(154, 26, 152, 0.9764705882);
@@ -687,261 +887,8 @@ h4 {
     text-align: start;
     margin-bottom: 10px;
   }
-  .tarjeta1 {
-    grid-area: tarjeta1;
-    display: flex;
-    flex-direction: column;
-  }
-  .tarjeta2 {
-    grid-area: tarjeta2;
-    display: flex;
-    flex-direction: column;
-  }
-  .tarjeta3 {
-    grid-area: tarjeta3;
-    display: flex;
-    flex-direction: column;
-  }
-  .tarjeta4 {
-    grid-area: tarjeta4;
-    display: flex;
-    flex-direction: column;
-  }
-  .tarjeta5 {
-    grid-area: tarjeta5;
-    display: flex;
-    flex-direction: column;
-  }
-  .tarjeta6 {
-    grid-area: tarjeta6;
-    display: flex;
-    flex-direction: column;
-  }
-  .comprar {
-    background-color: rgba(154, 26, 152, 0.9764705882);
-    color: black;
-    border-radius: 2px;
-    font-size: 16px;
-    margin: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .lugar {
-    grid-area: lugar;
-    display: flex;
-    flex-direction: column;
-  }
-  .imagen {
-    grid-area: imagen;
-    display: flex;
-    flex-direction: column;
-  }
-  .fecha {
-    grid-area: fecha;
-    display: flex;
-    flex-direction: column;
-  }
-  .comprar {
-    grid-area: comprar;
-    display: flex;
-    flex-direction: column;
-  }
-  footer {
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
 }
-/* ------------media maxwidth 576px--------------- */
 @media (max-width: 576px) {
-  .body {
-    width: 100%;
-  }
-  main {
-    min-height: 60vh;
-  }
-  .foto {
-    width: 100%;
-  }
-  .texto1 {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .encabezado {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .encabezado img {
-    width: 80px;
-    height: 60px;
-    padding: 2px;
-  }
-  .encabezado ul {
-    margin-right: 5px;
-    list-style: none;
-    font-size: 20px;
-  }
-  .encabezado ul li a {
-    text-decoration: none;
-    display: block;
-    padding: 8px 10px;
-    font-size: 5px;
-  }
-  h1 {
-    color: black;
-    font-size: 10px;
-    padding-left: 5px;
-    text-align: center;
-    font-family: "Rock Salt", cursive;
-  }
-  h2 {
-    color: black;
-    font-size: 20px;
-    padding-left: 10px;
-    text-align: center;
-  }
-  h3 {
-    color: rgba(154, 26, 152, 0.9764705882);
-    font-size: 20px;
-    margin: 15px;
-  }
-  .subtitulo {
-    color: black;
-  }
-  h4 {
-    color: black;
-    font-size: 10px;
-    padding-left: 5px;
-  }
-  p {
-    color: black;
-    font-size: 10px;
-    padding-left: 5px;
-  }
-  .formulario {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas: "nombre    " "telefono  " "email     " "...       " "propuesta";
-    color: black;
-    font-size: 10px;
-    width: 100px;
-    margin: auto;
-    border-bottom: 2px white;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .formulario input {
-    background-color: rgba(154, 26, 152, 0.9764705882);
-    border: none;
-    border-bottom: 2px black;
-    width: 150px;
-    height: 25px;
-  }
-  .formulario textarea {
-    width: 200px;
-    height: 150px;
-  }
-  .formulario button {
-    color: rgba(154, 26, 152, 0.9764705882);
-    background-color: black;
-    border: solid 1px white;
-    border-radius: 5px;
-    display: flex;
-    justify-self: end;
-  }
-  .nombre {
-    grid-area: nombre;
-    display: flex;
-    flex-direction: column;
-  }
-  .telefono {
-    grid-area: telefono;
-    display: flex;
-    flex-direction: column;
-  }
-  .email {
-    grid-area: email;
-    display: flex;
-    flex-direction: column;
-  }
-  .propuesta {
-    grid-area: propuesta;
-    display: flex;
-    flex-direction: column;
-  }
-  .enviar {
-    width: 100px;
-    height: 25px;
-    justify-content: center;
-  }
-  .yesan {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas: "img p1";
-    align-items: center;
-  }
-  .yesan img {
-    width: 50px;
-    border-radius: 10px;
-    margin: 20px;
-    grid-area: img;
-    display: flex;
-    flex-direction: column;
-  }
-  .p1 {
-    grid-area: p1;
-    display: flex;
-    flex-direction: column;
-  }
-  .asan {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas: "img p2";
-    align-items: center;
-  }
-  .asan img {
-    width: 50px;
-    border-radius: 10px;
-    margin: 20px;
-    grid-area: img;
-    display: flex;
-    flex-direction: column;
-  }
-  .p2 {
-    grid-area: p2;
-    display: flex;
-    flex-direction: column;
-  }
-  .musica {
-    display: flex;
-    flex-direction: column;
-  }
-  .sencillo iframe {
-    width: 300px;
-    border-radius: 10px;
-    margin: 15px;
-  }
-  .disco img {
-    width: 300px;
-    border-radius: 10px;
-    margin: px;
-  }
-  .sencillo h3 {
-    color: black;
-  }
-  .disco h3 {
-    color: black;
-  }
-  .tarjetas {
-    display: flex;
-    flex-direction: column;
-  }
   .tarjeta {
     background-color: black;
     color: rgba(154, 26, 152, 0.9764705882);
@@ -970,36 +917,140 @@ h4 {
     font-size: 16px;
     list-style: none;
   }
+}
+
+.tarjeta1 {
+  grid-area: tarjeta1;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .tarjeta1 {
     grid-area: tarjeta1;
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .tarjeta1 {
+    grid-area: tarjeta1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tarjeta2 {
+  grid-area: tarjeta2;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .tarjeta2 {
     grid-area: tarjeta2;
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .tarjeta2 {
+    grid-area: tarjeta2;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tarjeta3 {
+  grid-area: tarjeta3;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .tarjeta3 {
     grid-area: tarjeta3;
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .tarjeta3 {
+    grid-area: tarjeta3;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tarjeta4 {
+  grid-area: tarjeta4;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .tarjeta4 {
     grid-area: tarjeta4;
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .tarjeta4 {
+    grid-area: tarjeta4;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tarjeta5 {
+  grid-area: tarjeta5;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .tarjeta5 {
     grid-area: tarjeta5;
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .tarjeta5 {
+    grid-area: tarjeta5;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tarjeta6 {
+  grid-area: tarjeta6;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .tarjeta6 {
     grid-area: tarjeta6;
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .tarjeta6 {
+    grid-area: tarjeta6;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.comprar {
+  background-color: rgba(154, 26, 152, 0.9764705882);
+  color: black;
+  border-radius: 2px;
+  font-size: 16px;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
   .comprar {
     background-color: rgba(154, 26, 152, 0.9764705882);
     color: black;
@@ -1014,32 +1065,111 @@ h4 {
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .comprar {
+    background-color: rgba(154, 26, 152, 0.9764705882);
+    color: black;
+    border-radius: 2px;
+    font-size: 16px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: comprar;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.lugar {
+  grid-area: lugar;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .lugar {
     grid-area: lugar;
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .lugar {
+    grid-area: lugar;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.imagen {
+  grid-area: imagen;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .imagen {
     grid-area: imagen;
     display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+  .imagen {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.fecha {
+  grid-area: fecha;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
   .fecha {
     grid-area: fecha;
     display: flex;
     flex-direction: column;
   }
-  footer {
-    background-color: black;
+}
+@media (max-width: 576px) {
+  .fecha {
+    grid-area: fecha;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  footer img {
-    width: 50px;
-    height: 35px;
-    margin: 5px;
+    flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.p1 {
+  grid-area: p;
+  display: flex;
+  flex-direction: column;
+}
+
+.p2 {
+  grid-area: p;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------media max-width 992px--------------- */
+/* ------------media maxwidth 768px--------------- */
+/* ------------media maxwidth 576px--------------- */
 
 /*# sourceMappingURL=style.css.map */

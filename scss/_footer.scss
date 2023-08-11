@@ -3,6 +3,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    @media (max-width:768px){
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
     img { 
         width: 100px;
         height: 75px;
@@ -10,4 +16,18 @@ footer {
         
     
     }
-}
+    @media (max-width:576px){
+
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            img { 
+                width: 50px;
+                height: 35px;
+                margin: 5px;
+                
+            
+            }
+        }
+    }

@@ -7,4 +7,12 @@
         column-gap: 10px;
         grid-template-areas: "sencillo  disco";
     }
+    @media (max-width:768px){
+        display: flex;
+        flex-direction: column;
+    }
+    @media (max-width:576px){
+        display: flex;
+        flex-direction: column;
+    }
 }
