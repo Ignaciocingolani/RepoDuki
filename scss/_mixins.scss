@@ -1,0 +1,25 @@
+@mixin foto($width,$height){
+    
+        grid-area: foto;
+        display: flex;
+        flex-direction: column;
+        width: $width;
+        height: $height;
+}
+
+@mixin comprar($background-color,$border-radius,$font-size,$margin){
+
+   
+        background-color:$background-color;
+        color: black;
+        border-radius: $border-radius;
+        font-size: $font-size;
+        margin: $margin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+       
+}
+   

@@ -2,9 +2,18 @@
     iframe {
         width: 500px;
         border-radius: 10px;
-        margin: 30px;  
+        margin: 30px; 
+        @media screen and (max-width: 992px){
+            width: 300px;
+            border-radius: 10px;
+            margin: 30px; 
+        } 
     }
     h3 {
         color: black;
+        @media screen and (max-width: 992px){
+            color: black;
+        }
     }
+    
     }

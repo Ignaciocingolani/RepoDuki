@@ -4,6 +4,7 @@
 @import "variables";
 @import "extends";
 @import "mixins";
+@import "header";
 @import "encabezado";
 @import "footer";
 @import "main";
@@ -38,111 +39,6 @@
 /* ------------media max-width 992px--------------- */
 
 @media screen and (max-width: 992px) {
-    header {
-        background-color: black;
-        width: 100%;
-        height: 150px;
-        position: relative;
-    
-    }
-    
-    
-    
-    .texto1{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .encabezado{
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-         ul { 
-            display: flex;
-            justify-content: end;
-            margin-right: 10px;
-            list-style: none;
-            font-size: 20px;
-            
-        }
-         img {
-        
-            width: 80px;
-            height: 60px;
-            padding: 10px;
-            
-        }
-        
-         ul li a {
-            text-decoration: none;
-            display: block;
-            padding: 8px 15px;
-            font-size: 20px;
-        }
-    }
-    
-    
-
-    h1 {
-        color: black;
-        font-size: 40px;
-        padding-left: 10px;
-        text-align: center;
-        font-family: 'Rock Salt', cursive;;
-     }
-     h2 {
-         color: black;
-         font-size: 50px;
-         padding-left: 20px;
-         text-align: center;
-     }
-     h3 {
-         color: #9a1a98f9 ;
-         font-size: 40px;
-         margin: 30px;
-     }
-     .subtitulo {
-         color: black;
-     }
-     h4 {
-         color: black;
-         font-size: 30px;
-         padding-left: 20px;
-     }
-     p {
-         color: black;
-         font-size: 25px;
-         padding-left: 20px;
-     }
-
-
-     .musica {
-        display: grid;
-        column-gap: 10px;
-        grid-template-areas: "sencillo  disco"
-        ;
-    }
-    
-    .sencillo iframe {
-        width: 300px;
-        border-radius: 10px;
-        margin: 30px;  
-    }
-    .disco img {
-        width: 200px;
-        border-radius: 10px;
-        margin: 30px;
-    }
-    .sencillo h3 {
-        color: black;
-    }
-    .disco h3 {
-        color: black;
-    }
-    
 
 }
 
@@ -152,45 +48,6 @@
 
 @media (max-width:768px){
 
-    header {
-        background-color: black;
-        width: 100%;
-        height: 80px
-        
-    
-    }
-    .texto1{
-        display: flex;
-        flex-direction: column;
-    }
-    .foto{
-        width: 300px;
-        height: 200px;
-    }
-    .encabezado {
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-         img {
-
-            width: 80px;
-            height: 60px;
-            padding: 10px;
-        }
-    
-         ul {
-            margin-right: 10px;
-             list-style: none;
-             font-size: 15px;
-         }
-    
-          ul li a {
-            text-decoration: none;
-            padding: 6px 5px;
-            font-size: 10px;
-        }
-    }
     
     
     
@@ -520,13 +377,7 @@
     .body {
         width: 100%;
     }
-    header {
-        background-color: black;
-        width: 100%;
-        height: 20px
-        
-    
-    }
+   
 
 
     main {

@@ -2,4 +2,9 @@
     display: grid;
     column-gap: 10px;
     grid-template-areas: "sencillo  disco";
+    @media screen and (max-width: 992px){
+        display: grid;
+        column-gap: 10px;
+        grid-template-areas: "sencillo  disco";
+    }
 }

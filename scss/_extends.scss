@@ -14,4 +14,7 @@
         flex-direction: column;
         
     } 
+    @media(max-widht:576px) {
+        flex-direction: column;
+    }
 }
